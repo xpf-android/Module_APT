@@ -57,6 +57,7 @@ public class ARouterProcessor extends AbstractProcessor {
         elementUtils = processingEnv.getElementUtils();
         messager = processingEnv.getMessager();
         filer = processingEnv.getFiler();
+        typeUtils = processingEnv.getTypeUtils();
 
         // 通过ProcessingEnvironment去获取build.gradle(app module)传过来的参数
         String content = processingEnv.getOptions().get("content");
